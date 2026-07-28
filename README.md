@@ -13,9 +13,10 @@ basta con abrir el archivo en el navegador.
 
 | Sección | Contenido |
 |---|---|
-| Hero | Propuesta de valor, CTA y panel de métricas animado |
-| Confianza | Sectores con los que se trabaja |
+| Hero | Propuesta de valor, CTA, panel de métricas animado y tarjeta flotante |
+| Confianza | Sectores con los que se trabaja + carrusel infinito de tecnologías |
 | Servicios | 6 áreas de servicio con iconos y etiquetas |
+| Por qué nosotros | Retícula *bento* con los diferenciadores del equipo |
 | Proceso | Método de trabajo en 4 etapas |
 | Métricas | Contadores animados al entrar en pantalla |
 | Casos de éxito | 3 casos con KPIs |
@@ -27,11 +28,17 @@ basta con abrir el archivo en el navegador.
 
 ## Características técnicas
 
-- **Paleta azul / blanco / negro** definida con variables CSS (`--blue-*`, `--ink`, `--white`).
+- **Paleta azul / blanco / negro** definida con variables CSS (`--blue-*`, `--ink`, `--white`),
+  con acentos secundarios en cian y violeta (`--cyan-*`, `--violet-*`) para los degradados de marca.
+- **Degradados de marca reutilizables** (`--grad-brand`, `--grad-text`): botones, iconos, KPIs y
+  fragmentos de titular resaltados con la clase `.grad-text`.
 - **Modo claro y oscuro** con conmutador en la barra superior; recuerda la preferencia en `localStorage`
   y respeta `prefers-color-scheme` la primera vez.
 - **Totalmente responsive** (escritorio, tablet y móvil) con menú hamburguesa.
 - **Animaciones al hacer scroll** vía `IntersectionObserver`, contadores animados y barra de progreso de lectura.
+- **Detalles de interacción**: fondo *aurora* animado en el hero, halo que sigue al cursor en las
+  tarjetas de servicio, destello en los botones principales, carrusel de tecnologías que se pausa
+  al pasar el ratón y enlace del menú resaltado según la sección visible.
 - **Accesibilidad**: `aria-label` / `aria-expanded` en controles, foco visible, navegación por teclado
   y respeto de `prefers-reduced-motion`.
 - **Sin JavaScript el contenido sigue siendo visible** (las animaciones se activan solo con la clase `js`).
