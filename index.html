@@ -9,7 +9,7 @@
 <meta property="og:title" content="Solutions AI — Inteligencia Artificial aplicada a tu negocio">
 <meta property="og:description" content="Automatización, agentes de IA y analítica predictiva para empresas que quieren resultados medibles.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230A1F44'/%3E%3Cpath d='M50 20 L76 35 V65 L50 80 L24 65 V35 Z' fill='none' stroke='%232E7BFF' stroke-width='7' stroke-linejoin='round'/%3E%3Ccircle cx='50' cy='50' r='9' fill='%232E7BFF'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231552A8'/%3E%3Cstop offset='.52' stop-color='%232E7BFF'/%3E%3Cstop offset='1' stop-color='%2322D3EE'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='26' fill='url(%23g)'/%3E%3Cpath d='M68 28H42a11 11 0 0 0 0 22h16a11 11 0 0 1 0 22H32' fill='none' stroke='%23fff' stroke-width='7.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='68' cy='28' r='5.5' fill='%23fff'/%3E%3Ccircle cx='32' cy='72' r='5.5' fill='%23fff'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
@@ -787,9 +787,18 @@ html[data-theme="dark"] .footer{background:#05070E;border-top:1px solid var(--bo
   <div class="container">
     <a href="#inicio" class="logo" aria-label="Solutions AI — inicio">
       <svg class="logo__mark" viewBox="0 0 100 100" aria-hidden="true">
-        <rect width="100" height="100" rx="24" fill="#0A1F44"/>
-        <path d="M50 20 L76 35 V65 L50 80 L24 65 V35 Z" fill="none" stroke="#2E7BFF" stroke-width="7" stroke-linejoin="round"/>
-        <circle cx="50" cy="50" r="9" fill="#2E7BFF"/>
+        <defs>
+          <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#1552A8"/>
+            <stop offset="52%" stop-color="#2E7BFF"/>
+            <stop offset="100%" stop-color="#22D3EE"/>
+          </linearGradient>
+        </defs>
+        <rect width="100" height="100" rx="26" fill="url(#logoGrad)"/>
+        <path d="M68 28 H42 a11 11 0 0 0 0 22 h16 a11 11 0 0 1 0 22 H32"
+              fill="none" stroke="#fff" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="68" cy="28" r="5.5" fill="#fff"/>
+        <circle cx="32" cy="72" r="5.5" fill="#fff"/>
       </svg>
       <span>Solutions<b>AI</b></span>
     </a>
@@ -1415,9 +1424,18 @@ html[data-theme="dark"] .footer{background:#05070E;border-top:1px solid var(--bo
       <div>
         <div class="logo">
           <svg class="logo__mark" viewBox="0 0 100 100" aria-hidden="true">
-            <rect width="100" height="100" rx="24" fill="#0F2E63"/>
-            <path d="M50 20 L76 35 V65 L50 80 L24 65 V35 Z" fill="none" stroke="#5B99FF" stroke-width="7" stroke-linejoin="round"/>
-            <circle cx="50" cy="50" r="9" fill="#5B99FF"/>
+            <defs>
+              <linearGradient id="logoGradFooter" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#1552A8"/>
+                <stop offset="52%" stop-color="#2E7BFF"/>
+                <stop offset="100%" stop-color="#22D3EE"/>
+              </linearGradient>
+            </defs>
+            <rect width="100" height="100" rx="26" fill="url(#logoGradFooter)"/>
+            <path d="M68 28 H42 a11 11 0 0 0 0 22 h16 a11 11 0 0 1 0 22 H32"
+                  fill="none" stroke="#fff" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="68" cy="28" r="5.5" fill="#fff"/>
+            <circle cx="32" cy="72" r="5.5" fill="#fff"/>
           </svg>
           <span>Solutions<b style="color:#5B99FF;">AI</b></span>
         </div>

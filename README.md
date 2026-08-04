@@ -2,7 +2,8 @@
 
 Landing page corporativa de **Solutions AI**, construida en un **único archivo `index.html`**
 que incluye todo el HTML, el CSS y el JavaScript. No requiere build, ni dependencias, ni servidor:
-basta con abrir el archivo en el navegador.
+basta con abrir el archivo en el navegador. La carpeta `brand/` guarda el logo suelto para usarlo
+fuera del sitio; la página no la necesita para funcionar.
 
 ## Cómo verlo
 
@@ -44,6 +45,22 @@ basta con abrir el archivo en el navegador.
 - **Sin JavaScript el contenido sigue siendo visible** (las animaciones se activan solo con la clase `js`).
 - Iconos SVG en línea y favicon embebido: cero peticiones externas salvo las fuentes de Google Fonts
   (si no cargan, se usan fuentes del sistema).
+
+## Marca
+
+El isotipo es una **S trazada como circuito**, con dos nodos en los extremos: se lee a la vez como
+la inicial de Solutions y como una referencia tecnológica. Va sobre un cuadrado redondeado con el
+degradado de marca (`#1552A8 → #2E7BFF → #22D3EE`).
+
+| Archivo | Uso |
+|---|---|
+| `brand/logo.svg` | Versión principal, con degradado. Presentaciones, redes, documentos. |
+| `brand/logo-mono.svg` | Una sola tinta (azul corporativo). Impresión, sellos, fondos complejos. |
+
+Dentro de `index.html` el isotipo va **en línea** en tres sitios: la barra de navegación, el pie y el
+`favicon` (data URI en el `<link rel="icon">`). Si cambias el logo, actualiza los tres. Los dos SVG
+en línea usan IDs de degradado distintos (`logoGrad` y `logoGradFooter`) porque un mismo ID
+repetido en la página haría que el segundo no pintara.
 
 ## Personalización rápida
 
